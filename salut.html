@@ -1,0 +1,289 @@
+<!DOCTYPE html>			
+<html>
+
+	<head>								<!-- Balise "<head>" balise en téte titre de la page, caractére de la page..-->
+		<meta charset="UTF-8" />		
+		<title>Cours Tonio</title>
+		<link rel="stylesheet" type="text/css" href="font.css">
+	</head>
+
+	<body>														<!-- Balise "<body>" corp de la page -->
+		<h1>Cours OpenClassroom </h1>
+
+		<h2>Les Balises</h2>  
+		<h3>Balises Paires</h3>							<!-- Balise "<br />" pour revenir a la ligne -->
+		
+		<p>
+			<ul>
+
+			<li> <strong>head</strong>: Balise en téte de page, titre de la page caractére de la page.. </li>
+			<li> <strong>body</strong> : Corp de la page </li>
+			<li>h1-h6 : Titre/sous titre.. </li>
+			<li>em : Mettre en valeur, (style italique) </li>
+			<li>strong : Texte en gras </li>
+			<li>mark : Texte surligné par défaut en jaune </li>
+			<li>ul : liste à puce non numéroté </li>
+			<li>ol : liste à puce numéroté </li>
+			<li>li : Puce </li>
+			<li>a href="lien">phrase suivante ou nom du lien </li>
+			<li>a href="dossier/lien">phrase suivante ou nom du lien </li>
+			<li>a href="#mots ou phrase (pour référencer un élément dans la page)">le mot clé. Pour faire le lien avec l'élément référence dans la page : id="mot ou phrase"</li>
+			<li>a href="lien" title="commantaire pour l'info bulle">nom du lien (fait apparaitre une petite bulle quand on passe sur le lien avec la souris)</li>
+			<li>a href="lien" title="commantaire pour l'info bulle" target="_blank">nom du lien (pour ouvrir le lien dans un nouvel onglet)</li>
+			<li>a href="destinataire mail">phrase(lien qui génére l'envoi d'un email avec la boite mail de du destinataire</li>
+			<li>a href="fichier.zip">nom du fichier a télécharger (faire télécharger quelque chose au visiteur(fichier dans le meme dossier que la page source))</li> <br/>
+
+			Pour savoir faire une insersion d'image dans la page : <br />
+			<a href="insertion/page 2.html" title="Ne fais pas ta prude clic!" target="_blank">Insertion d'éléments dans une page</a>
+			</ul>
+			<span class="gras1">Pour rappel :</span><br />
+			<br />
+			Les balises inline :
+			<ul>
+			<li>a</li>
+			<li>en</li>
+			<li>strong</li>
+			<li>...</li>
+			</ul>
+			Les balises block :
+			<ul>
+			<li>p</li>
+			<li>div</li>
+			<li>h1..</li>
+			</ul>
+		</p>
+
+		<h3>Balises Impaires</h3>
+		<p> br /> : Retour à ligne<br />
+		<br/>
+
+
+		</p>
+
+		<h3>Le CSS :</h3><br />
+
+		<h4>Les Fichier externes :</h4>
+
+		Faire une balise link dans le head de la page qui charge la page creer dédier au css "style.css", ex :<br />
+		&lt;link rel="stylesheet" href="style.css" /&gt;<br />
+		<br />
+		
+		<h4>Exemple de code dans la page CSS creer :</h4>
+
+		p{color:blue;}<br />
+		p pour paragraphe<br />
+		<br />
+		Ecrire directement le code CSS dans l'entete de la page (head):<br />
+		Faire une balise style, nomé les balises css p pour paragraphe puis mettre le code css dedans.<br />
+		<br />
+		Ecrire directement le code CSS dans le paragraphe que l'on veut enjoliver :<br />
+		&lt;p style="color: blue;"&gt;blablablabla&lt;/p&gt;<br />
+		<br />
+
+		<h4>Contenue code CSS :</h4>
+		
+		p (pour paragraphe)
+		{color: blue; (Texte de couleur bleu)<br />
+		font-weight: bold; (texture du texte en gras)<br />
+		}
+
+		h1 (pour les titre de taille h1 et si on veut paragraphe est titre : h1, p)
+		{color: blue; (Texte de couleur bleu)<br />
+		font-weight: bold; (texture du texte en gras)<br />
+		}<br />
+		<br />
+		
+		<h4>Les commentaire en CSS :</h4>
+		
+		/* Commentaires */<br />
+		<br />
+		<h4>Mettre juste une phrase ou autre en stylle avec CSS(page creer externe)</h4>
+		<h5>Dans le code html la ou l'on veut modifier le style nous rajoutons ex :</h5>
+		<p>
+			&lt;p class="introduction">blablabla&lt;/p&gt;
+		</p>
+		<h5>Puis dans le code CSS de la page creer ex :</h5>
+		.introduction puis le reste du code CSS<br />
+		Ou <br />
+		Dans le html : &lt;p id="introduction">blablabla&lt;/p&gt;<br />
+		Puis dans le CSS: #introduction puis le restedu code CSS<br />
+		<br />
+		<h5>Pour toute les balises ex :</h5>
+		* (pour toute les balises)
+		{color: blue; (Texte de couleur bleu)}<br />
+		<br />
+		<h5>Pour un paragraphe qui suit un titre (code CSS):</h5>
+		h1 + p {Puis le code CSS}<br />
+		<br />
+		<h5>Comment faire pour les "balise em dans un titre" (Code CSS) :</h5>
+		h1 em {Puis code CSS}<br />
+		<br />
+		<h5>Balises genériques div et span :</h5>
+		<br />
+		Pour reférencer un mot ou autre dans le CSS (juste modifier le style d'un mot dans le html) ex :<br />
+		<br />
+		&lt;p&gt;blablabla &lt;span&gt;le mot&lt;/span&gt;blablabla&lt;/p&gt;<br />
+		=> &lt;p&gt;blablabla &lt; class="introduction"le mot&lt;/span&gt;blablabla&lt;/p&gt;<br />
+		<br />
+		Pour des block de paragraphe on utilise les balises div ex :<br />
+		<br />
+		&lt;div&gt;<br />
+		Blablabla<br />
+		&lt;/div&gt;
+
+		<h4>Formatez du texte :</h4>
+
+		<div class="taille1">
+
+		Pour modifier la talle :<br />
+		Taille absolue:<br />
+		<br />
+		p => Pour les pragraphes, h1 => pour les titres<br />
+		<br />
+		{
+		font-size: 16px;<br />
+		}<br />
+
+		Taille relative :<br />
+		p<br />
+		{<br />
+			font-size: small;<br />
+		}<br />
+		<ul>
+
+					   <li>xx-small  : minuscule ;</li>
+					   <br />
+					   <li>x-small  : très petit ;</li>
+					   <br />
+					   <li>small  : petit ;</li>
+					   <br />
+					   <li>medium  : moyen ;</li>
+					   <br />
+					   <li>large  : grand ;</li>
+					   <br />
+					   <li>x-large  : très grand ;</li>
+					   <br />
+					   <li>xx-large  : euh… gigantesque</li>
+		</ul>			   
+		<br />
+		Indiquer la taille en "em" et "ex" ex :<br />
+
+		p <br />
+		{<br />
+		font-size: 0.8em;<br />
+				   1.3ex<br />
+		}
+		</div>
+		<h4>Les Polices :</h4>
+		<div class="police1">
+		p<br />
+		{<br />
+			font-family: police1,police2...;<br />
+		<br />
+		Polices les plus courantes :<br />
+			Arial ;
+
+			"Arial Black" ;
+
+			"Comic Sans MS" ;
+
+			"Courier New" ;
+
+			Georgia ;
+
+			Impact ;
+
+			"Times New Roman" ;
+
+			"Trebuchet MS" ;
+
+			Verdana.<br />
+			<br />
+		</div>
+		<div class="police2">
+		Utiliser une police pesonnalisée :<br />
+		Bibliothéque de police pérsonnalisée :<br />
+		<a href="http://www.fontsquirrel.com/" target="_blank">http://www.fontsquirrel.com/</a><br />
+		<a href="https://www.dafont.com/fr/" target="_blank">http://www.dafond.com</a><br />
+		<br />
+		Différents format de fichier de polices qui existent :<br />
+		<ul>
+			<li>.ttf : TrueType Font. Fonctionne sur IE9 et tous les autres navigateurs</li>
+			<li>.eot : Embedded OpenType. Fonctionne que sur IE, se format et propriétaire, Microsoft.</li>
+			<li>.otf : OpenType Font. Ne fonctionne pas sur IE</li>
+			<li>.svg : SVG Font. Le seul format reconnu Iphone et ipad</li>
+			<li>.woff : Web Open Font Format. Nouveau Format, qui fonctionne sur tous les navigateurs</li>
+		</ul>
+		Ex pour ajouter une police personnalisée :<br />
+		<a href="font.css" target="_blank">Ex : Fichier CSS de la page<a />
+		</div>
+		<h4>Italique, gras souligné...</h4>
+		<span class="italique1">En italique avec ( font-style ):</span><br />
+		<ul>
+			<li>italic : le texte sera en italique</li>
+			<li>oblique : le texte sera légèrement penché</li>
+			<li>normal : le texte sera normal(par defaut), cela permet d'annuler une mise en "italique" avec em</li>
+		</ul>	
+
+		<span class="gras1">En Gras avec ( font-weight ) :</span><br />
+		<ul>
+			<li>bold : le texte sera en gras</li>
+			<li> normal : le texte sera normal(par defaut) cela permet d'annuler une mise en "gras" avec strong</li>
+		</ul>
+		<span class="soulignement1">Soulignement et autres décorations avec ( text-decoration ) :</span><br />
+		<ul>
+			<li>underline : souligné </li>
+			<li>line-through : barré</li>
+			<li>overline : ligne au dessus</li>
+			<li>nome : normal</li>
+		</ul>
+
+		<div class="alignement1"><h4>L'lignement avec ( text-align ) :</div></h4>
+		Fonctionne qu'avec les balises de type "block"<br />
+		<ul>
+			<li>lest : le texte sera aligné à gauche (par défaut)</li>
+			<li>center : le texte sera centrer</li>
+			<li>right : le texte sera aligné à droite</li>
+			<li>justify : le texte sera "justifier", il permet de prendre toute le largeur sans laisser d'espace blanc</li>
+		</ul>
+		<br />
+		<h4><img width=150 src="images/face.gif" class="imageflottante1" alt="Image flottante" />Les flottants avec ( float ) :</h4>
+		Permet de faire flotter un element autour d'un texte.<br />
+		On peut l'utiliser avec les balises "inline" et "block"<br />
+		<ul>
+			<li>left : l'élément flottera à gauche</li>
+			<li>right : l'élément flottera à droite</li>
+		</ul>
+		Ex code html :<br />
+		&lt;p&gt;&lt;img src="flash.gif" class="imageflottante" alt="Image flottante" /&gt; Ceci est un texte normal de paragraphe, écrit à la suite de l'image et qui l'habillera car l'image est flottante.&lt;/p&gt;<br/>
+		<br />
+		Puis ex code CSS :<br />
+		.imageflottante<br />
+		{<br />
+    		float: left;<br />
+		}<br />
+		<h4>Stopper un flottant avec ( clear ) :</h4>
+		<ul>
+			<li>left : le texte se poursuit en dessous aprés un float: left;</li>
+			<li>right : le texte se poursuit en dessous aprés un float: right;</li>
+			<li>both : le texte se poursuit en dessous, que ce soit aprés un float: left; ou aprés un float: right;</li>
+		</ul>
+
+
+
+
+
+
+
+		
+
+
+
+
+		<h2>Patience et sérénité </h2>					<!-- Balise "<h1>_</h1> balise de titre,jusqu'a h6 -->
+
+		<p>Ca va étre long..</p>
+
+	</body>
+
+</html>

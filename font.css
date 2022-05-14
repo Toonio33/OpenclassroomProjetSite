@@ -1,0 +1,49 @@
+@font-face {	/* Définition d'une nouvelle police*/
+	
+	font-family: "balgruf";
+	src: url("balgruf.otf");
+
+}
+
+.taille1
+{
+
+	font-size: large;
+
+}
+
+.police1
+{
+	font-family: "comic Sans MS"
+}
+
+
+.police2
+{
+	font-family: "balgruf";
+}
+
+.italique1
+{
+	font-style: italic;
+}
+
+.gras1
+{
+	font-weight: bold;
+}
+
+.soulignement1
+{
+	text-decoration: underline;
+}
+
+.alignement1
+{
+	text-align: center;
+}
+
+.imageflottante
+{
+	float: left;
+}
